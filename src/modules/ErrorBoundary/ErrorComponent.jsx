@@ -8,12 +8,13 @@ const ErrorComponent = () => {
     setState(state + 1);
   };
   useEffect(() => {
-    if (state === 4) {
+    console.log('state', state);
+    if (state === 2) {
       console.log('deno');
-      throw new Error('something went wrong');
+      throw new Error('');
     }
-  }, []);
+  }, [state]);
 
-  return <button onClick={handleClick}>Button</button>;
+  return <button onClick={handleClick}>Button1</button>;
 };
 export default ErrorComponent;

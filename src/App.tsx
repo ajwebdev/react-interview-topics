@@ -5,7 +5,7 @@ import ErrorComponent from './modules/ErrorBoundary/ErrorComponent';
 
 export default function App() {
   return (
-    <ErrorBoundary fallback={'loading'}>
+    <ErrorBoundary>
       <div>
         <h1>Hello StackBlitz!</h1>
         <p>Start editing to see some magic happen :)</p>
