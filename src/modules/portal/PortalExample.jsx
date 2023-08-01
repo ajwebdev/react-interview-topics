@@ -10,7 +10,7 @@ const PortalExample = () => {
       <button onClick={openModal}>Open modal</button>
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <h1>Modal title</h1>
+          <h1>Modal</h1>
           <p>Modal content</p>
         </Modal>
       )}
